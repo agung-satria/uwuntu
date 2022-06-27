@@ -32,4 +32,16 @@ sudo apt-get install build-essential libx11-dev libxinerama-dev sharutils suckle
 ```sh
 sudo apt install mpv mpc mpd ncmpcpp
 ```
+# Ranger File Manager
+```sh
+pip install ranger-fm ueberzug
+sudo apt install libimage-exiftool-perl ffmpegthumbnailer
+(dragon/drag-and-drop is already in $PATH installed)
+```
 
+cp everything inside dotconfig/ranger to ~/.config/ranger
+(except plugin directory)
+
+```sh
+git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+```
