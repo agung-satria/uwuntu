@@ -20,7 +20,7 @@ sudo apt install libfuse2
 ```
 # Some Dependencies:
 ```sh
-sudo apt install git wget python3-pip nodejs npm yad ripgrep tmux fd-find fzf gnome-tweaks
+sudo apt install git wget python3-pip nodejs npm yad ripgrep tmux fd-find fzf gnome-tweaks xclip
 ```
 
 # Suckless Dependencies:
