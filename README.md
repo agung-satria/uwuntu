@@ -64,7 +64,7 @@ sudo apt-get install chrome-gnome-shell
 ```
 
 Install [Gnome-Shell-Extension](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=id)
-Install [Dash-to-Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
+(Optional) [Dash-to-Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
 
 # Custom Shortcut
 
@@ -74,6 +74,7 @@ st -e ncmpcpp
 st -e gotop
 st -e ranger
 tabbed -r 2 st -w ''
+tabbed -r 2 st -w '' -e tmux
 mpc -p 6601 toggle
 mpc -p 6601 prev
 mpc -p 6601 seek 0%
@@ -84,8 +85,8 @@ mpc -p 6601 seek -5
 mpc -p 6601 seek -30
 mpc -p 6601 seek +5
 mpc -p 6601 seek +30
-brave
-brave --incognito
+brave-browser
+brave-browser --incognito
 ```
 
 > That's it! Don't rice too much!
