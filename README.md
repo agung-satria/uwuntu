@@ -33,7 +33,7 @@ sudo mv nvim.appimage /usr/bin/nvim
 # Some Dependencies
 
 ```sh
-sudo apt install git wget python3-pip nodejs npm yad ripgrep tmux tmuxinator fd-find fzf gnome-tweaks xclip
+sudo apt install git wget python3-pip nodejs npm yad ripgrep tmux tmuxinator fd-find fzf gnome-tweaks xclip tree htop
 ```
 
 # Suckless Dependencies
@@ -61,7 +61,7 @@ sudo apt install mpv mpc mpd ncmpcpp
 ```sh
 pip install ranger-fm ueberzug
 sudo apt install libimage-exiftool-perl ffmpegthumbnailer
-(dragon/drag-and-drop is already in $PATH installed)
+(dragon/drag-and-drop is `bin` directory, move it to $PATH)
 ```
 
 cp everything inside dotconfig/ranger to ~/.config/ranger
