@@ -4,7 +4,7 @@
 sudo apt-get update && sudo apt-get upgrade -y
 ```
 
-# Install Brave-Browser:
+# Install Brave-Browser
 
 ```sh
 sudo apt install apt-transport-https curl
@@ -14,13 +14,13 @@ sudo apt update
 sudo apt install brave-browser
 ```
 
-# Remove firefox sn4p
+# Remove Firefox Snap
 
 ```sh
 sudo snap remove firefox
 ```
 
-# Download nvim 7.0.3:
+# Download Neovim 7.0.3
 
 ```sh
 sudo add-apt-repository universe
@@ -30,13 +30,13 @@ sudo chmod +x *appimage
 sudo mv nvim.appimage /usr/bin/nvim
 ```
 
-# Some Dependencies:
+# Some Dependencies
 
 ```sh
 sudo apt install git wget python3-pip nodejs npm yad ripgrep tmux fd-find fzf gnome-tweaks xclip
 ```
 
-# Suckless Dependencies:
+# Suckless Dependencies
 
 ```sh
 sudo apt-get install build-essential libx11-dev libxinerama-dev sharutils suckless-tools libxft-dev libx11-xcb1 libx11-xcb-dev libxcb-res0-dev sudo libexif-dev libimlib2-dev libharfbuzz-dev fonts-symbola hsetroot
@@ -44,7 +44,7 @@ sudo apt-get install build-essential libx11-dev libxinerama-dev sharutils suckle
 
 # Neovim config
 
-Read my [nvim-config](https://github.com/agung-satria/nvim.git)
+Read my [nvim-config](https://github.com/agung-satria/nvim.git):
 
 ```sh
 https://github.com/agung-satria/nvim.git

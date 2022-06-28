@@ -4,5 +4,5 @@ Version=0.10
 Type=Application
 Terminal=false
 Exec=st -g 100x25 ncmpcpp
-Name=Music (ncmpcpp)
-Icon=/home/agung/.mygithub/dotfiles/usr-share-applications/ncmpcpp-logo.png
+Name=ncmpcpp
+Icon=~/.local/share/icons/ncmpcpp-logo.png
