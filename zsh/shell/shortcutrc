@@ -13,6 +13,7 @@ lcs="cd /home/agung/.local/share && ls -a" \
 lcsl="cd /home/agung/.local/share/larbs && ls -a" \
 lcss="cd /home/agung/.local/share/sounds && ls -a" \
 cf="cd /home/agung/.config && ls -a" \
+cw="cd /home/agung/uwuntu && ls -a" \
 cfd="cd /home/agung/.config/dunst && ls -a" \
 cflf="cd /home/agung/.config/lf && ls -a" \
 cfmpv="cd /home/agung/.config/mpv && ls -a" \

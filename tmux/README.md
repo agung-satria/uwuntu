@@ -11,7 +11,7 @@ cp .tmux.conf ~/
 cp .config/tmuxinator/asdf.yml ~/.config/tmuxinator
 ```
 
-# type this in terminal if tmux is already running
+# Type this in terminal if tmux is already running
 
 ```sh
 tmux source ~/.tmux.conf

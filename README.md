@@ -71,7 +71,7 @@ cp everything inside dotconfig/ranger to ~/.config/ranger
 git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
 ```
 
-# Install Gnome-Extension
+# Install Gnome-Extensions
 
 ```sh
 sudo apt-get install chrome-gnome-shell
@@ -80,7 +80,7 @@ sudo apt-get install chrome-gnome-shell
 Install [Gnome-Shell-Extension](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=id)
 (Optional) [Dash-to-Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
 
-# Custom Shortcut
+# Custom Gnome Shortcuts
 
 ```sh
 st

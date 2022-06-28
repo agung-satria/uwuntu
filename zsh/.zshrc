@@ -184,7 +184,7 @@ abbrev-alias mkslideshow="cat folder/* | ffmpeg -y -framerate 1.5 -f image2pipe 
 abbrev-alias tn="tmux new-session -s "
 abbrev-alias tk="tmux kill-session -t "
 abbrev-alias tr="tmux rename-session -t "
-abbrev-alias tc="tmux attach -t "
+abbrev-alias tc="tmux attach-session -t "
 # make sure ffmpeg and lame are installed
 # zsh abbreviations===================================
 

@@ -32,9 +32,9 @@ alias \
   la="ls -la" \
   ltr="ls -ltrh" \
   ltra="ls -ltrah" \
-  lf="lfub" \
+  lf="ranger" \
   scim="sc-im" \
-  f="lfub" \
+  f="ranger" \
   F="dolphin ." \
   music="mpd && ncmpcpp" \
   startapache="sudo systemctl start httpd.service && lampstatus" \
