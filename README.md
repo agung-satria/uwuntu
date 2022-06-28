@@ -44,8 +44,7 @@ sudo apt-get install build-essential libx11-dev libxinerama-dev sharutils suckle
 
 # Neovim config
 
-read:
-Read my [nvim] config (https://github.com/agung-satria/nvim.git)
+Read my [nvim config] (https://github.com/agung-satria/nvim.git)
 
 ```sh
 https://github.com/agung-satria/nvim.git
