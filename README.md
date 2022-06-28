@@ -36,6 +36,12 @@ sudo apt install git wget python3-pip nodejs npm yad ripgrep tmux fd-find fzf gn
 sudo apt-get install build-essential libx11-dev libxinerama-dev sharutils suckless-tools libxft-dev libx11-xcb1 libx11-xcb-dev libxcb-res0-dev sudo libexif-dev libimlib2-dev libharfbuzz-dev fonts-symbola hsetroot
 ```
 
+# Neovim config
+read:
+```sh
+https://github.com/agung-satria/nvim.git
+```
+
 # Media Player
 
 ```sh
