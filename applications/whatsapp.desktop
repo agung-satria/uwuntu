@@ -6,4 +6,4 @@ GenericName=WhatsApp
 Exec=/home/agung/Downloads/whatsapp-for-linux/build/debug/whatsapp-for-linux
 Terminal=false
 Categories=Internet
-Icon=~/.local/share/icons/wa.png
+Icon=/home/agung/.local/share/icons/wa.png

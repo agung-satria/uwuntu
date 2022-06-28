@@ -7,4 +7,4 @@ Exec=st
 Name=Simple Terminal
 #Icon=/path/to/icon
 #Icon=st
-Icon=~/.local/share/icons/st.png
+Icon=/home/agung/.local/share/icons/st.png

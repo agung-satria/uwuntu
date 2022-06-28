@@ -21,7 +21,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-# ZFZ
+# FZF
 
 ```sh
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
@@ -76,17 +76,21 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 Set THEME in .zshrc
 
 ```sh
-Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.
+ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.
 ```
+
 zsh
 
 # Copy config file
+
 ```sh
 cp -R shell ~/.config/
 ```
 
 # Add Custom Alias, Shortcut, DirName
+
 add this lines to zshrc:
+
 ```sh
 # Load aliases and shortcuts if existent.
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc"
@@ -166,6 +170,7 @@ abbrev-alias tc="tmux attach-session -t "
 ```
 
 # .zshrc
+
 > Compare .zshrc(in this repo) with yours before copy paste it
 
 # Refresh
