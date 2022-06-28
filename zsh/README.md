@@ -78,8 +78,25 @@ Set THEME in .zshrc
 ```sh
 Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.
 ```
-
 zsh
+
+# Copy config file
+```sh
+cp -R shell ~/.config/
+```
+
+# Add Custom Alias, Shortcut, DirName
+add this lines to zshrc:
+```sh
+# Load aliases and shortcuts if existent.
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc"
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc"
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc"
+
+export VISUAL=nvim;
+export EDITOR=nvim;
+
+```
 
 # Add Abbreviations to zsh
 
@@ -147,6 +164,9 @@ abbrev-alias tc="tmux attach-session -t "
 # zsh abbreviations===================================
 
 ```
+
+# .zshrc
+> Compare .zshrc(in this repo) with yours before copy paste it
 
 # Refresh
 
