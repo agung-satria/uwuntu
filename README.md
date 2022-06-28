@@ -17,9 +17,11 @@ sudo apt install brave-browser
 # Download nvim 7.0.3:
 
 ```sh
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 sudo add-apt-repository universe
 sudo apt install libfuse2
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+sudo chmod +x *appimage
+sudo mv nvim.appimage /usr/bin/nvim
 ```
 
 # Some Dependencies:
@@ -59,9 +61,10 @@ git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger
 
 ```sh
 sudo apt-get install chrome-gnome-shell
-Install [Gnome-Shell-Extension](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=id
-Install [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
 ```
+
+Install [Gnome-Shell-Extension](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=id)
+Install [Dash-to-Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
 
 # Custom Shortcut
 
