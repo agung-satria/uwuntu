@@ -1,7 +1,7 @@
-# Remove firefox sn4p
+# Post-Install
 
 ```sh
-sudo snap remove firefox
+sudo apt-get update && sudo apt-get upgrade -y
 ```
 
 # Install Brave-Browser:
@@ -12,6 +12,12 @@ sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://b
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 sudo apt update
 sudo apt install brave-browser
+```
+
+# Remove firefox sn4p
+
+```sh
+sudo snap remove firefox
 ```
 
 # Download nvim 7.0.3:
@@ -37,7 +43,10 @@ sudo apt-get install build-essential libx11-dev libxinerama-dev sharutils suckle
 ```
 
 # Neovim config
+
 read:
+Read my [nvim] config (https://github.com/agung-satria/nvim.git)
+
 ```sh
 https://github.com/agung-satria/nvim.git
 ```
