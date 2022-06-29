@@ -4,7 +4,6 @@
 #define TERMINAL "st"
 #define TERMCLASS "St"
 
-
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 2;       /* snap pixel */
@@ -32,17 +31,17 @@ static const char *fonts[]        = { "JetBrainsMono Nerd Font:style:medium:size
                                       "Material Design Icons-Regular:size=13"};
 static const char dmenufont[]     = "JetBrainsMono Nerd Font:style:medium:size=13";
 
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
-static const char *colors[][3]      = {
+static const char col_gray1[]     = "#141919";
+static const char col_gray2[]     = "#39393c";
+static const char col_gray3[]     = "#bbbbbb";
+static const char col_gray4[]     = "#e2e8ed";
+static const char col_cyan[]      = "#57a7a7";
+static const char col_red[]       = "#dc6c32";
+static const char *colors[][3]    = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeNorm] = { col_gray3, col_gray1, col_gray1 },
+	[SchemeSel]  = { col_gray1, col_cyan,  col_cyan  },
 	[SchemeTitle]  = { col_gray4, col_gray1,  col_cyan  },
-
 };
 
 typedef struct {
@@ -110,13 +109,12 @@ static const Rule rules[] = {
   	{ "aft-linux-qt",				NULL,				NULL,       1 << 8,	         1,      -1 }, 
   	{ "firefox",            NULL,       NULL,       1 << 1,           0,     -1 },  
     /* scratchpads */
-	{ NULL,		  "spterm",		NULL,		SPTAG(0),	           1,               -1 },
-	{ NULL,		  "spcalc",		NULL,		SPTAG(1),	           1,               -1 },
-	{ NULL,		  "spncmpcpp", NULL,		SPTAG(2),	           1,               -1 },
-	{ NULL,		  "spcalcurse",NULL,		SPTAG(3),	           1,               -1 },
-	{ NULL,		  "spnmtui",   NULL,		SPTAG(4),	           1,               -1 },
-	{ NULL,		  "spranger",   NULL,		SPTAG(5),	           1,               -1 },
-
+	  { NULL,		  "spterm",		NULL,		SPTAG(0),	      1,               -1 },
+	  { NULL,		  "spcalc",		NULL,		SPTAG(1),	      1,               -1 },
+	  { NULL,		  "spncmpcpp",NULL,		SPTAG(2),	      1,               -1 },
+	  { NULL,		  "spcalcurse",NULL,		SPTAG(3),	    1,               -1 },
+	  { NULL,		  "spnmtui",  NULL,		SPTAG(4),	      1,               -1 },
+	  { NULL,		  "spranger", NULL,		SPTAG(5),	      1,               -1 },
     /* floatthings */
     { "float-st",           NULL,       NULL,       0,            1,           -1 },
     { "float-st-lfub",      NULL,       NULL,       0,            1,           -1 },
@@ -226,7 +224,6 @@ static Key keys[] = {
 
   /*___________________________________________________agstr____________________________________________________ */
 
-
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
   { MODKEY|ControlMask,           XK_Return, spawn,    SHCMD("tabbed -r 2 st -w ''") },
@@ -272,12 +269,12 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_t,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_s,      setlayout,      {.v = &layouts[3]} },
-	{ MODKEY,                       XK_c,      setlayout,      {.v = &layouts[5]} },
+	{ MODKEY|ShiftMask,             XK_c,      setlayout,      {.v = &layouts[5]} },
 	{ MODKEY,                       XK_u,      setlayout,      {.v = &layouts[11]} },
 	{ MODKEY|ShiftMask,             XK_f,      setlayout,      {.v = &layouts[13]} },
-	{ MODKEY|ControlMask,		XK_comma,  cyclelayout,    {.i = -1 } },
+	{ MODKEY|ControlMask,		        XK_comma,  cyclelayout,    {.i = -1 } },
 	{ MODKEY|ControlMask,           XK_period, cyclelayout,    {.i = +1 } },
-	{ MODKEY,                       XK_semicolon,setlayout,      {0} },
+	{ MODKEY,                       XK_semicolon,setlayout,    {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_Down,   moveresize,     {.v = "0x 25y 0w 0h" } },
 	{ MODKEY,                       XK_Up,     moveresize,     {.v = "0x -25y 0w 0h" } },
@@ -303,12 +300,12 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 
   // scratchpad
- 	{ MODKEY|ShiftMask, 	  XK_Return, togglescratch,  {.ui = 0 } },
-	{ MODKEY,          	    XK_apostrophe, togglescratch,  {.ui = 1 } },
-	{ MODKEY|ShiftMask,    	XK_m,	     togglescratch,  {.ui = 2 } },
-  { MODKEY|ShiftMask,    	XK_c,	     togglescratch,  {.ui = 3 } },
-	{ MODKEY|ControlMask,   XK_n,	     togglescratch,  {.ui = 4 } },
-	{ MODKEY,               XK_e,	     togglescratch,  {.ui = 5 } },
+ 	{ MODKEY|ShiftMask, 	          XK_Return, togglescratch,  {.ui = 0 } },
+	{ MODKEY,          	            XK_apostrophe, togglescratch,  {.ui = 1 } },
+	{ MODKEY|ShiftMask,    	        XK_m,	     togglescratch,  {.ui = 2 } },
+  { MODKEY,    	                  XK_c,	     togglescratch,  {.ui = 3 } },
+	{ MODKEY|ControlMask,           XK_n,	     togglescratch,  {.ui = 4 } },
+	{ MODKEY,                       XK_e,	     togglescratch,  {.ui = 5 } },
 
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
@@ -319,8 +316,8 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ControlMask,           XK_q,      quit,           {1} },
-	{ MODKEY|ControlMask|ShiftMask, XK_q,      quit,           {0} }, 
+	{ MODKEY|ControlMask,           XK_q,      quit,           {1} }, //reload dwm
+	{ MODKEY|ControlMask|ShiftMask, XK_q,      quit,           {0} }, //quit dwm
 };
 
 /* button definitions */

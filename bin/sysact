@@ -12,7 +12,7 @@ case "$(printf " lock\n leave dwm\n勒 renew dwm\n🐻 hibernate\n🔃 reb
 	'🐻 hibernate') slock $ctl hibernate ;;
 	'⏾ sleep') $ctl suspend && slock ;;
 	'🔃 reboot') $ctl reboot -i ;;
-	'shutdown') $ctl poweroff -i ;;
+	' shutdown') $ctl poweroff -i ;;
 	'📺 display off') xset dpms force off ;;
 	*) exit 1 ;;
 esac
