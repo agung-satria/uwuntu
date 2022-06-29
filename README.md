@@ -33,7 +33,7 @@ sudo mv nvim.appimage /usr/bin/nvim
 # Some Dependencies
 
 ```sh
-sudo apt install git wget python3-pip nodejs npm yad ripgrep tmux tmuxinator fd-find fzf gnome-tweaks xclip tree htop rofi pulsemixer
+sudo apt install git wget python3-pip nodejs npm yad ripgrep tmux tmuxinator fd-find fzf gnome-tweaks xclip tree htop rofi pulsemixer maim arandr calcurse
 ```
 
 # Suckless Dependencies

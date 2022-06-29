@@ -1,5 +1,6 @@
-# Run this to build suckless software
-make sure all the dependencies are installed
+# Install suckless software
+
 ```sh
-make && sudo make install
+sudo make install
 ```
+> That's it! Don't rice too much!
