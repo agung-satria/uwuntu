@@ -1,4 +1,4 @@
-# Post-Install
+# Post-Install (ubuntu 22.04 LTS minimal install)
 
 ```sh
 sudo apt-get update && sudo apt-get upgrade -y
@@ -28,12 +28,14 @@ sudo apt install libfuse2
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 sudo chmod +x *appimage
 sudo mv nvim.appimage /usr/bin/nvim
+or
+sudo mv nvim_0.7.3 /usr/bin/nvim
 ```
 
 # Some Dependencies
 
 ```sh
-sudo apt install git wget python3-pip nodejs npm yad ripgrep tmux tmuxinator fd-find fzf gnome-tweaks xclip tree htop rofi pulsemixer maim arandr calcurse
+sudo apt install git wget python3-pip nodejs npm yad ripgrep tmux tmuxinator fd-find fzf gnome-tweaks xclip tree htop rofi pulsemixer maim arandr calcurse grabc
 ```
 
 # Suckless Dependencies
@@ -73,6 +75,12 @@ cp everything inside dotconfig/ranger to ~/.config/ranger
 
 ```sh
 git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+```
+
+# Applications (personal references)
+
+```sh
+sudo apt install gimp inkscape shotcut libreoffice
 ```
 
 # Install Gnome-Extensions

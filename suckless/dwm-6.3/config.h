@@ -182,7 +182,6 @@ static const char *termcmd[]  = { "st", NULL };
 static Key keys[] = {
 	/* modifier                     key        function        argument */
   /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^agstr^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
-	{ MODKEY,			XK_F4,		spawn,		SHCMD(TERMINAL " -c float-st-pulsemixer -g 100x25 pulsemixer") },
 
   /* volume and brightness */
   { 0,  XF86XK_AudioMute,           spawn, SHCMD("amixer -q -D pulse sset Master toggle") },
@@ -193,6 +192,7 @@ static Key keys[] = {
 
   /* mpd control */
  	{ MODKEY,			          XK_slash,		     	spawn,		SHCMD("mpc -p 6601 toggle") },
+ 	{ MODKEY|ShiftMask,			XK_slash,		     	spawn,		SHCMD("mpc -p 6601 stop") },
 	{ MODKEY,			          XK_comma,	        spawn,		SHCMD("mpc -p 6601 prev") },
 	{ MODKEY|ShiftMask,		  XK_comma,	        spawn,		SHCMD("mpc -p 6601 seek 0%") },
 	{ MODKEY,			          XK_period,	      spawn,		SHCMD("mpc -p 6601 next") },
@@ -207,6 +207,7 @@ static Key keys[] = {
   { MODKEY,								XK_Escape,        spawn,		SHCMD("sysact") },
   { MODKEY,            		XK_w,             spawn,		SHCMD("brave-browser") },
   { MODKEY|ShiftMask,  		XK_w,             spawn,		SHCMD("brave-browser --incognito") },
+  { MODKEY|ShiftMask,  		XK_e,             spawn,		SHCMD("nautilus") },
 	{ MODKEY,			          XK_p,	  		      spawn,	  SHCMD("arandr") },
 	{ MODKEY,			          XK_a,   	        spawn,	  SHCMD("dunstctl history-pop") },
 	{ MODKEY|ShiftMask,		  XK_a,   	        spawn,	  SHCMD("dunstctl close-all") },
@@ -215,12 +216,13 @@ static Key keys[] = {
 
   // floatthings
   { MODKEY|ShiftMask,    XK_r,           spawn,    SHCMD("st -c float-st-gotop -g 100x25 gotop") },
+	{ MODKEY,			         XK_F4,		       spawn,		 SHCMD(TERMINAL " -c float-st-pulsemixer -g 100x25 pulsemixer") },
 
   /* screenshots */
-	{ 0,			     	XK_Print,	spawn,		SHCMD("ss-full") },
-	{ ShiftMask,	  XK_Print,	spawn,		SHCMD("maimpick") },
-	{ ControlMask,  XK_Print,	spawn,		SHCMD("ss-cp") },
-	{ MODKEY,	      XK_v,     spawn,	  SHCMD("dmenurecord") },
+	{ 0,			     	       XK_Print,	spawn,		SHCMD("ss-full") },
+	{ ShiftMask,	         XK_Print,	spawn,		SHCMD("maimpick") },
+	{ ControlMask,         XK_Print,	spawn,		SHCMD("ss-cp") },
+	{ MODKEY,	             XK_v,      spawn,	  SHCMD("dmenurecord") },
 
   /*___________________________________________________agstr____________________________________________________ */
 

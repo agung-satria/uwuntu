@@ -9,5 +9,6 @@ lowbatnotif &
 dunst &
 nm-applet &
 slstatus &
-natural-mouse-scroll-false.sh &
+picom &
+# natural-mouse-scroll-false.sh &
 sudo chown agung:agung /sys/class/backlight/amdgpu_bl0/*
