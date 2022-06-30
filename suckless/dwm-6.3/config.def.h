@@ -75,8 +75,9 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class                  instance    title       tags mask     isfloating   monitor */
-   	{ "Gimp",	              NULL,			  NULL,		    1 << 5,	         0,		 -1 },
+   	{ "Gimp",	              NULL,			  NULL,		    1 << 5,	         0,		   -1 },
    	{ "Firefox",            NULL,			  NULL,		    1 << 1,	   		   0,		   -1 },
+   	{ "Org.gnome.Nautilus", NULL,			  NULL,		    1 << 7,	   		   0,		   -1 },
    	{ "Whatsapp-for-linux", NULL,			  NULL,		    1 << 7,	   		   0,		   -1 },
    	{ "TelegramDesktop",    NULL,			  NULL,		    1 << 3,	   		   0,		   -1 },
    	{ "Brave-browser",      NULL,			  NULL,		    1 << 1,	    	   0,		   -1 },  
@@ -172,7 +173,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray1, NULL };
 static const char *termcmd[]  = { "st", NULL };
 
 #include <X11/XF86keysym.h>
@@ -213,7 +214,7 @@ static Key keys[] = {
 	{ MODKEY,			          XK_a,   	        spawn,	  SHCMD("dunstctl history-pop") },
 	{ MODKEY|ShiftMask,		  XK_a,   	        spawn,	  SHCMD("dunstctl close-all") },
 	{ MODKEY|ControlMask,		XK_a,   	        spawn,	  SHCMD("dunstctl close") },
-	{ MODKEY|ControlMask,		XK_l,   	        spawn,	  SHCMD("slock") },
+	{ MODKEY|ControlMask,		XK_l,   	        spawn,	  SHCMD("betterlockscreen -l") },
 
   // floatthings
   { MODKEY|ShiftMask,    XK_r,           spawn,    SHCMD("st -c float-st-gotop -g 100x25 gotop") },
