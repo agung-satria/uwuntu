@@ -20,18 +20,6 @@ sudo apt install brave-browser
 sudo snap remove firefox
 ```
 
-# Download Neovim 7.0.3
-
-```sh
-sudo add-apt-repository universe
-sudo apt install libfuse2
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-sudo chmod +x *appimage
-sudo mv nvim.appimage /usr/bin/nvim
-or
-sudo mv nvim_0.7.3 /usr/bin/nvim
-```
-
 # Some Dependencies
 
 ```sh
