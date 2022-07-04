@@ -11,7 +11,7 @@ static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows sel
 static const unsigned int systrayonleft = 0;   	/* 0: systray in the right corner, >0: systray on left of status text */
 static const unsigned int systrayspacing = 2;   /* systray spacing */
 static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
-static int showsystray        = 0;     /* 0 means no systray */
+static int showsystray        = 1;     /* 0 means no systray */
 static const unsigned int gappih    = 14;       /* horiz inner gap between windows */
 static const unsigned int gappiv    = 14;       /* vert inner gap between windows */
 static const unsigned int gappoh    = 14;       /* horiz outer gap between windows and screen edge */
@@ -26,10 +26,10 @@ enum showtab_modes { showtab_never, showtab_auto, showtab_nmodes, showtab_always
 static const int showtab			= showtab_auto;        /* Default tab bar show mode */
 static const int toptab				= False;               /* False means bottom tab bar */
 
-static const char *fonts[]        = { "JetBrainsMono Nerd Font:style:medium:size=11",
-                                      "JoyPixels:size=11:antialias=true:autohint=true", 
-                                      "Material Design Icons-Regular:size=11"};
-static const char dmenufont[]     = "JetBrainsMono Nerd Font:style:medium:size=11";
+static const char *fonts[]        = { "JetBrainsMono Nerd Font:style:medium:size=13",
+                                      "JoyPixels:size=13:antialias=true:autohint=true", 
+                                      "Material Design Icons-Regular:size=13"};
+static const char dmenufont[]     = "JetBrainsMono Nerd Font:style:medium:size=13";
 
 static const char col_gray1[]     = "#141919";
 static const char col_gray2[]     = "#39393c";
@@ -213,7 +213,7 @@ static Key keys[] = {
 	{ MODKEY,			          XK_a,   	        spawn,	  SHCMD("dunstctl history-pop") },
 	{ MODKEY|ShiftMask,		  XK_a,   	        spawn,	  SHCMD("dunstctl close-all") },
 	{ MODKEY|ControlMask,		XK_a,   	        spawn,	  SHCMD("dunstctl close") },
-	{ MODKEY|ControlMask,		XK_l,   	        spawn,	  SHCMD("slock") },
+	{ MODKEY|ControlMask,		XK_l,   	        spawn,	  SHCMD("betterlockscreen -l") },
 
   // floatthings
   { MODKEY|ShiftMask,    XK_r,           spawn,    SHCMD("st -c float-st-gotop -g 100x25 gotop") },
