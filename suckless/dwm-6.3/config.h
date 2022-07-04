@@ -17,7 +17,7 @@ static const unsigned int gappiv    = 14;       /* vert inner gap between window
 static const unsigned int gappoh    = 14;       /* horiz outer gap between windows and screen edge */
 static const unsigned int gappov    = 14;       /* vert outer gap between windows and screen edge */
 static       int smartgaps          = 1;        /* 1 means no outer gap when there is only one window */
-static const int showbar            = 0;     /* 0 means no bar */
+static const int showbar            = 1;     /* 0 means no bar */
 static const int topbar             = 1;     /* 0 means bottom bar */
 /*  Display modes of the tab bar: never shown, always shown, shown only in  */
 /*  monocle mode in the presence of several windows.                        */
@@ -75,9 +75,8 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class                  instance    title       tags mask     isfloating   monitor */
-   	{ "Gimp",	              NULL,			  NULL,		    1 << 5,	         0,		   -1 },
+   	{ "Gimp",	              NULL,			  NULL,		    1 << 5,	         0,		 -1 },
    	{ "Firefox",            NULL,			  NULL,		    1 << 1,	   		   0,		   -1 },
-   	{ "Org.gnome.Nautilus", NULL,			  NULL,		    1 << 7,	   		   0,		   -1 },
    	{ "Whatsapp-for-linux", NULL,			  NULL,		    1 << 7,	   		   0,		   -1 },
    	{ "TelegramDesktop",    NULL,			  NULL,		    1 << 3,	   		   0,		   -1 },
    	{ "Brave-browser",      NULL,			  NULL,		    1 << 1,	    	   0,		   -1 },  
@@ -214,7 +213,7 @@ static Key keys[] = {
 	{ MODKEY,			          XK_a,   	        spawn,	  SHCMD("dunstctl history-pop") },
 	{ MODKEY|ShiftMask,		  XK_a,   	        spawn,	  SHCMD("dunstctl close-all") },
 	{ MODKEY|ControlMask,		XK_a,   	        spawn,	  SHCMD("dunstctl close") },
-	{ MODKEY|ControlMask,		XK_l,   	        spawn,	  SHCMD("betterlockscreen -l") },
+	{ MODKEY|ControlMask,		XK_l,   	        spawn,	  SHCMD("slock") },
 
   // floatthings
   { MODKEY|ShiftMask,    XK_r,           spawn,    SHCMD("st -c float-st-gotop -g 100x25 gotop") },
@@ -225,6 +224,9 @@ static Key keys[] = {
 	{ ShiftMask,	         XK_Print,	spawn,		SHCMD("maimpick") },
 	{ ControlMask,         XK_Print,	spawn,		SHCMD("ss-cp") },
 	{ MODKEY,	             XK_v,      spawn,	  SHCMD("dmenurecord") },
+
+  { MODKEY,			XK_F11,		spawn,		SHCMD("mpv --untimed --no-cache --no-osc --no-input-default-bindings --profile=low-latency --input-conf=/dev/null --title=webcam $(ls /dev/video[0,2,4,6,8] | tail -n 1)") },
+
 
   /*___________________________________________________agstr____________________________________________________ */
 
@@ -283,6 +285,7 @@ static Key keys[] = {
 	{ MODKEY|ControlMask,           XK_period, cyclelayout,    {.i = +1 } },
 	{ MODKEY,                       XK_semicolon,setlayout,    {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+	{ MODKEY,                       XK_f,      togglefullscr,  {0} },
 	{ MODKEY,                       XK_Down,   moveresize,     {.v = "0x 25y 0w 0h" } },
 	{ MODKEY,                       XK_Up,     moveresize,     {.v = "0x -25y 0w 0h" } },
 	{ MODKEY,                       XK_Right,  moveresize,     {.v = "25x 0y 0w 0h" } },
