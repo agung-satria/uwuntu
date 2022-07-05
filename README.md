@@ -54,8 +54,10 @@ sudo apt install mpv mpc mpd ncmpcpp
 
 ```sh
 pip install ranger-fm ueberzug
-sudo apt install libimage-exiftool-perl ffmpegthumbnailer
+sudo apt install libimage-exiftool-perl ffmpegthumbnailer mlocate findutils fzf
 (dragon/drag-and-drop is `bin` directory, move it to $PATH)
+fzf guide:
+https://github.com/gotbletu/shownotes/blob/master/ranger_file_locate_fzf.md
 ```
 
 cp everything inside dotconfig/ranger to ~/.config/ranger
