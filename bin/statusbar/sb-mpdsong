@@ -1,8 +1,8 @@
 #!/bin/bash
 
-PREFIX_PLAY=' '
+ PREFIX_PLAY=' '
 #PREFIX_PLAY='🎵 '
-PREFIX_PAUSE=' '
+ PREFIX_PAUSE=' '
 #PREFIX_PAUSE='⏸️ '
 TIME="$(mpc -p 6601 status | awk 'NR==2 { print $3 }')"
 

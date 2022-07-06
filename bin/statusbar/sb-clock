@@ -42,4 +42,5 @@ case $BLOCK_BUTTON in
 esac
 
 #echo "$(date "+%b-%d-%Y $icon%I:%M%p")" #12hr
-echo "$(date "+%b-%d-%Y $icon%H:%M%p")" #24hr
+# echo "$(date "+%b-%d-%Y $icon%H:%M%p")" #24hr
+echo "$(date "+%b-%d-%Y %H:%M%p")" #24hr

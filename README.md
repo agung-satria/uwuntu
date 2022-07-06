@@ -67,10 +67,11 @@ cp everything inside dotconfig/ranger to ~/.config/ranger
 git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
 ```
 
-# Applications (personal references)
+# Applications and utilities (personal references)
 
 ```sh
 sudo apt install gimp inkscape shotcut libreoffice
+pip install spotdl
 ```
 
 # Install Gnome-Extensions

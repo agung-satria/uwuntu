@@ -4,7 +4,7 @@
 
 # If run DWM
 
-If run DWM from Display Manager, run `asd` on terminal (AutoStartDwm)
+If run DWM from Display Manager, run `asd` (AutoStartDwm)
 
 # Install suckless software
 

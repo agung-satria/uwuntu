@@ -10,7 +10,7 @@ static const char unknown_str[] = "n/a";
 #define MAXLEN 2048
 static const struct arg args[] = {
 	/* function format          argument */
-	{ run_command,	"^c#e79b6a^ %2s ", "sb-mpdsong" },
+	{ run_command,	"^c#b0b2be^ %2s ", "sb-mpdsong" },
 	{ run_command,	"^c#ebaf80^ %2s ", "sb-nettraf" },
 	{ run_command,	"^c#85bf69^ %2s ", "sb-battery" },
 	{ run_command,	"^c#89b8c2^ %2s ", "sb-volubuntu" },
