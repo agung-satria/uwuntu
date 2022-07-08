@@ -26,17 +26,18 @@ enum showtab_modes { showtab_never, showtab_auto, showtab_nmodes, showtab_always
 static const int showtab			= showtab_auto;        /* Default tab bar show mode */
 static const int toptab				= False;               /* False means bottom tab bar */
 
-static const char *fonts[]        = { "JetBrainsMono Nerd Font:style:medium:size=13",
-                                      "JoyPixels:size=13:antialias=true:autohint=true", 
-                                      "Material Design Icons-Regular:size=13"};
-static const char dmenufont[]     = "JetBrainsMono Nerd Font:style:medium:size=13";
+static const char *fonts[]        = {"Ubuntu:weight=regular:size=13:antialias=true:autohint=true",
+                                     "JetBrainsMono Nerd Font:style:medium:size=13:autohint=true",
+                                     "JoyPixels:size=13:antialias=true:autohint=true", 
+                                     "Material Design Icons-Regular:size=13:autohint=true"};
+static const char dmenufont[]     = "Ubuntu:weight=regular:size=13:antialias=true:autohint=true";
 
 static const char col_gray1[]     = "#141919";
 static const char col_gray2[]     = "#39393c";
 static const char col_gray3[]     = "#bbbbbb";
 static const char col_gray4[]     = "#e2e8ed";
-static const char col_cyan[]      = "#57a7a7";
-static const char col_red[]       = "#dc6c32";
+static const char col_cyan[]      = "#83a598";
+static const char col_red[]       = "#fb4934";
 static const char *colors[][3]    = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray1 },
