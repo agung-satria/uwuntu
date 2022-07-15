@@ -90,6 +90,7 @@ st
 st -e ncmpcpp
 st -e gotop
 st -e ranger
+st -e pulsemixer
 tabbed -r 2 st -w ''
 tabbed -r 2 st -w '' -e tmux
 mpc -p 6601 toggle
