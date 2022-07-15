@@ -14,6 +14,7 @@ done; unset command
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
   zshconfig="nvim ~/.zshrc" \
+  build="npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch" \
   v="nvim" \
   vv="nvim" \
   vim="nvim" \

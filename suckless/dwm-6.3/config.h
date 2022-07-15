@@ -50,7 +50,7 @@ typedef struct {
 	const void *cmd;
 } Sp;
 const char *spcmd1[] = {"st", "-n", "spterm", "-g", "100x25", NULL };
-const char *spcmd2[] = {"st", "-n", "spcalc", "-g", "50x20+660+275", "bc", "-lq", NULL };
+const char *spcmd2[] = {"st", "-n", "spcalc", "-g", "40x20", "bc", "-lq", NULL };
 const char *spcmd3[] = {"st", "-n", "spncmpcpp", "-g", "100x25", "-e", "ncmpcpp", NULL };
 const char *spcmd4[] = {"st", "-n", "spcalcurse", "-g", "100x25", "-e", "calcurse", NULL };
 const char *spcmd5[] = {"st", "-n", "spnmtui", "-g", "100x25", "-e", "nmtui", NULL };
@@ -68,9 +68,9 @@ static Sp scratchpads[] = {
 };
 
 /* tagging */
-// static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 // static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
-static const char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
+// static const char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
 static const Rule rules[] = {
 	/* xprop(1):
 	 *	WM_CLASS(STRING) = instance, class
@@ -101,6 +101,7 @@ static const Rule rules[] = {
     { "vCoolor",			      NULL,       NULL,       0,                1,       -1 },  
     { "winbox64.exe",	      NULL,       NULL,       0,                1,       -1 },  
   	{ "Wine",               NULL,       NULL,       0,                1,       -1 },  
+    { "Eog",                NULL,       NULL,       0,                1,       -1 },  
   	{ "Arandr",             NULL,       NULL,       0,                1,       -1 },  
   	{ "ksnip",              NULL,       NULL,       0,                1,       -1 },  
   	{ "Pavucontrol",        NULL,       NULL,       0,                1,       -1 },  
