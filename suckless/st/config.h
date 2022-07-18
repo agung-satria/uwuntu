@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono Nerd Font :pixelsize=21:antialias=true:autohint=true";
-static char *font2[] = { "JetBrainsMono Nerd Font :pixelsize=21:antialias=true:autohint=true" };
+static char *font = "JetBrainsMono Nerd Font :pixelsize=22:antialias=true:autohint=true";
+static char *font2[] = { "JetBrainsMono Nerd Font :pixelsize=22:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
@@ -172,6 +172,36 @@ static const char *colorname[] = {
 	"#ebdbb2", /* 259 -> fg */
 };
 /* ########################end of gruvbox####################### */
+
+// /* ########################nordtheme####################### */
+// /* 8 normal colors */
+// 	"#3b4252", /* black   */
+// 	"#bf616a", /* red     */
+// 	"#a3be8c", /* green   */
+// 	"#ebcb8b", /* yellow  */
+// 	"#81a1c1", /* blue    */
+// 	"#b48ead", /* magenta */
+// 	"#88c0d0", /* cyan    */
+// 	"#e5e9f0", /* white   */
+// 	
+// /* 8 bright colors */
+// 	"#4c566a", /* black   */
+// 	"#bf616a", /* red     */
+// 	"#a3be8c", /* green   */
+// 	"#ebcb8b", /* yellow  */
+// 	"#81a1c1", /* blue    */
+// 	"#b48ead", /* magenta */
+// 	"#8fbcbb", /* cyan    */
+// 	"#eceff4", /* white   */
+// 
+// 	[255] = 0,
+// 	/* more colors can be added after 255 to use with DefaultXX */
+// 	"#add8e6", /* 256 -> cursor */
+// 	"#555555", /* 257 -> rev cursor*/
+// 	"#2e3440", /* 258 -> bg */
+// 	"#d8dee9", /* 259 -> fg */
+// };
+// /* ########################end of nordtheme####################### */
 
 /*
  * Default colors (colorname index)

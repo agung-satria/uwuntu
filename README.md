@@ -44,6 +44,12 @@ Read my [nvim-config](https://github.com/agung-satria/nvim.git):
 https://github.com/agung-satria/nvim.git
 ```
 
+# Install Microsoft Font
+
+```sh
+sudo apt install ttf-mscorefonts-installer
+```
+
 # Media Player
 
 ```sh
