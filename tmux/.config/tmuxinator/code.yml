@@ -1,0 +1,22 @@
+# /home/agung/.config/tmuxinator/form.yml
+
+name: formlp3i
+root: /home/agung/Documents/formlp3i
+
+windows:
+  - editor:
+      layout: main-vertical
+      # Synchronize all panes of this window, can be enabled before or after the pane commands run.
+      # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
+      # synchronize: after
+      panes:
+        - clear
+        - clear && figlet BISMILLAH
+  - zsh:
+      layout: a8f9,154x36,0,0{76x36,0,0,1,77x36,77,0[77x20,77,0,5,77x15,77,21,6]}
+      panes:
+        - clear
+        - clear
+        - clear
+  - ranger: ranger
+  - notes: v notes.txt

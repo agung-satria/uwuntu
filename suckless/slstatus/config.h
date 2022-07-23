@@ -16,4 +16,5 @@ static const struct arg args[] = {
 	{ run_command,	"^c#89b8c2^ %2s ", "sb-volubuntu" },
 	{ run_command,	"^c#e5d8ea^ %2s ", "sb-diskusage" },
 	{ run_command,	"^c#d5c07f^ %2s ", "sb-clock" },
+  { run_command,	"^c#e5d8ea^ %2s ", "sb-dwmlogo4px" },
 };

@@ -25,7 +25,8 @@ alias \
   tl="tmux ls" \
   mux="tmuxinator" \
   c="clear" \
-  lfl="leafpad" \
+  lfp="leafpad" \
+  lu="apt list --upgradable" \
   zshrc="nvim ~/.zshrc" \
   sourcez="source ~/.zshrc" \
   ll="ls -l" \
